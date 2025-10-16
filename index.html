@@ -374,19 +374,22 @@
           <!-- TODO: Replace with your paper abstract -->
           <div class="item">
             <!-- Your image here -->
-            <img src="static/images/carousel1.jpg" alt="Second research result visualization" loading="lazy"/>
+            <img src="static/images/costmap_layers.png" alt="Second research result visualization" loading="lazy"/>
+            <h2 class="subtitle has-text-centered">Cost-map</h2>
             <p>
-              lalala description description
+              Our Movable Obstacles Layer is integrated into ROS 2 Nav2’s layered costmap architecture, sitting above the base obstacle layer. It augments the standard static, obstacle, and inflation layers with adaptive costs derived from LiDAR data, enabling dynamic adjustment without altering the underlying Nav2 stack.
             </p>
             <!-- Your image here -->
-            <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
+            <img src="static/images/movable_obstacles_layer.png" alt="Second research result visualization" loading="lazy"/>
+            <h2 class="subtitle has-text-centered">Movable Obstacles Layer</h2>
             <p>
-              lalala description description
+              This diagram shows how LiDAR returns are compared with a static SLAM map to detect previously unseen obstacles. New detections are labeled as movable with reduced cost values and stored in memory so their identity persists when displaced. The layer updates these costs in real time based on interaction feedback from the robot.
             </p>
             <!-- Your image here -->
-            <img src="static/images/carousel3.jpg" alt="Second research result visualization" loading="lazy"/>
+            <img src="static/images/progress_checker.png" alt="Second research result visualization" loading="lazy"/>
+            <h2 class="subtitle has-text-centered">Slow-Pose Progress Checker</h2>
             <p>
-              lalala description description
+              The Slow-Pose Progress Checker monitors the ratio between commanded and actual velocity using odometry data. When the robot slows or stalls while pushing an object, it publishes messages that elevate nearby obstacle costs from light to heavy or lethal, prompting replanning and recovery behaviors.
             </p>
           </div>
         </div>
