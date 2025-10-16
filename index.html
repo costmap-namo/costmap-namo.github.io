@@ -259,7 +259,7 @@
                     <span class="author-block">
                       <a href="https://scholar.google.com/citations?user=knywrZUAAAAJ&hl=en" target="_blank">Tadesse Alemayoh Tsige</a>,</span>
                       <span class="author-block">
-                        <a href="https://scholar.google.com/citations?user=909K-EUAAAAJ&hl=en" target="_blank">Satoshi Tadokoro/a>,</span>
+                        <a href="https://scholar.google.com/citations?user=909K-EUAAAAJ&hl=en" target="_blank">Satoshi Tadokoro</a>,</span>
                         <span class="author-block">
                           <a href="https://scholar.google.com/citations?user=ULRbzMUAAAAJ&hl=en" target="_blank">Masashi Konyo</a>,</span>
                           <span class="author-block">
@@ -269,14 +269,14 @@
 
                   <div class="is-size-5 publication-authors">
                     <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
+                    <span class="author-block">Tough Cyberphysical AI Research Center<br>International Conference on Advanced Robotics(ICAR) 2025</span>
                     <!-- TODO: Remove this line if no equal contribution -->
                     <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
                   </div>
 
-                  <div class="column has-text-centered">
+                  <!-- <div class="column has-text-centered">
                     <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
+                         <!- - TODO: Update with your arXiv paper ID - ->
                       <span class="link-block">
                         <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
@@ -285,9 +285,9 @@
                         </span>
                         <span>Paper</span>
                       </a>
-                    </span>
+                    </span> -->
 
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
+                    <!-- TODO: Add your supplementary material PDF or remove this section
                     <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
@@ -296,27 +296,27 @@
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- TODO: Replace with your GitHub repository URL -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Code</span>
+                    <span>Code COMING SOON</span>
                   </a>
                 </span>
 
                 <!-- TODO: Update with your arXiv paper ID -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>arXiv COMING SOON</span>
                 </a>
               </span>
             </div>
@@ -339,7 +339,7 @@
       </video>
       <!-- TODO: Replace with your video description -->
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        In this demo, the robot uses the adaptive cost-map framework to navigate a simple corridor with a single movable obstacle. It evaluates both options—taking a longer detour or pushing the object aside—and autonomously chooses the shorter, pushable path to reach the goal. 
       </h2>
     </div>
   </div>
@@ -355,7 +355,7 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Reliable navigation in disaster-response and other unstructured indoor settings requires robots not only to avoid obstacles but also to recognise when those obstacles can be pushed aside. We present an adaptive, LiDAR and odometry-based path-planning framework that embeds this capability into the ROS 2 Nav2 stack. A new Movable Obstacles Layer labels all LiDAR returns missing from a prior static map as tentatively movable and assigns a reduced traversal cost. A companion Slow-Pose Progress Checker monitors the ratio of commanded to actual velocity; when the robot slows appreciably, the local cost is raised from light to heavy, and on a stall to lethal, prompting the global planner to back out and re-route. Gazebo evaluations on a Scout Mini, spanning isolated objects and cluttered corridors, show higher goal-reach rates and fewer deadlocks than a no-layer baseline, with traversal times broadly comparable. Because the method relies only on planar scans and CPU-level computation, it suits resource-constrained search and rescue robots and integrates into heterogeneous platforms with minimal engineering. Overall, the results indicate that interaction-aware cost maps are a lightweight, ROS2-native extension for navigating among potentially movable obstacles in unstructured settings.
           </p>
         </div>
       </div>
