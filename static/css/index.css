@@ -260,6 +260,7 @@ body {
 
 .results-carousel .item {
   margin: 1rem;
+  max-height: 70vh;
   overflow: hidden;
   padding: 1.5rem;
   font-size: 0;
