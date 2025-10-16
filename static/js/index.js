@@ -129,9 +129,8 @@ $(document).ready(function() {
 		infinite: false,
 		autoplay: false,
 		autoplaySpeed: 5000,
-        breakpoints: [  { changePoint: 99999, slidesToShow: 1, slidesToScroll: 1 }]
-
-    };
+        breakpoints: [],
+    }
 
 	// Initialize all div with carousel class
     var carousels = bulmaCarousel.attach('.carousel', options);
