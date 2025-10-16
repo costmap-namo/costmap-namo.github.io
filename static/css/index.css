@@ -260,7 +260,8 @@ body {
 
 .results-carousel .item {
   margin: 1rem;
-  max-height: 70vh;
+  max-height: 60vh;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   padding: 1.5rem;
   font-size: 0;
@@ -279,6 +280,7 @@ body {
 .results-carousel .item img,
 .results-carousel video {
   margin: 0;
+  object-fit: contain;
   border-radius: var(--border-radius);
   width: 100%;
   height: auto;
