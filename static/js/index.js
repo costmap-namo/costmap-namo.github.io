@@ -123,11 +123,12 @@ $(document).ready(function() {
     // Check for click events on the navbar burger icon
 
     var options = {
+        effect: 'fade',
 		slidesToScroll: 1,
 		slidesToShow: 1,
 		loop: true,
 		infinite: false,
-		autoplay: true,
+		autoplay: false,
 		autoplaySpeed: 5000,
         breakpoints: [],
     }
