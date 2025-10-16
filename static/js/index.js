@@ -129,6 +129,7 @@ $(document).ready(function() {
 		infinite: false,
 		autoplay: true,
 		autoplaySpeed: 5000,
+        breakpoints: [],
     }
 
 	// Initialize all div with carousel class
