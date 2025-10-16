@@ -262,6 +262,7 @@ body {
   margin: 1rem;
   display: grid;
   place-items: center;
+  aspect-ratio: 16 / 9;
   max-height: 0.5vh;
   overflow: hidden;
   padding: 1.5rem;
