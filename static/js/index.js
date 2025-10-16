@@ -123,15 +123,15 @@ $(document).ready(function() {
     // Check for click events on the navbar burger icon
 
     var options = {
-        effect: 'fade',
 		slidesToScroll: 1,
 		slidesToShow: 1,
 		loop: true,
 		infinite: false,
 		autoplay: false,
 		autoplaySpeed: 5000,
-        // breakpoints: [],
-    }
+        breakpoints: [  { changePoint: 99999, slidesToShow: 1, slidesToScroll: 1 }]
+
+    };
 
 	// Initialize all div with carousel class
     var carousels = bulmaCarousel.attach('.carousel', options);
