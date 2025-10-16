@@ -260,6 +260,7 @@ body {
 
 .results-carousel .item {
   margin: 1rem;
+  display: grid;
   place-items: center;
   overflow: hidden;
   padding: 1.5rem;
