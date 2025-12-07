@@ -6,11 +6,11 @@
   
   <!-- Primary Meta Tags -->
   <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="Adaptive Cost-Map-based Path Planning in Partially Unknown Environments with Movable Obstacles - Liviu-Mihai Stan, Ranulfo Bezerra, Shotaro Kojima, Tsige Tadesse Alemayoh, Satoshi Tadokoro, Masashi Konyo, Kazunori Ohno">
+  <meta name="title" content="Adaptive Costmap-based Path Planning in Partially Known Environments with Movable Obstacles - Liviu-Mihai Stan, Ranulfo Bezerra, Shotaro Kojima, Tsige Tadesse Alemayoh, Satoshi Tadokoro, Masashi Konyo, Kazunori Ohno">
   <!-- TODO: Write a compelling 150-160 character description of your research -->
   <meta name="description" content="Reliable robot navigation in disaster-response and other cluttered indoor environments requires more than obstacle avoidance — robots must also recognize when obstacles can be safely pushed aside. This project presents an adaptive, LiDAR- and odometry-based path-planning framework built directly into the ROS 2 Nav2 stack. A new Movable Obstacles Layer flags LiDAR returns missing from the static map as potentially movable, while a Slow-Pose Progress Checker monitors commanded versus actual velocity to detect when the robot is slowed or stalled. Costs are then raised from light to heavy to lethal, prompting Nav2 to back out and re-plan automatically. Simulations on a Scout Mini show that the system enables successful navigation through cluttered environments with movable obstacles—situations where standard static-map planners would fail—while maintaining efficient travel times. Fully open-source and CPU-efficient, this ROS 2-native framework provides a lightweight, reproducible solution for navigating among movable obstacles in unstructured, real-world settings.">
   <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="Navigation Among Movable Obstacles (NAMO), Adaptive Cost-Map Planning, ROS 2 Navigation Stack, LiDAR-Based Perception, Disaster-Response Robotics">
+  <meta name="keywords" content="Navigation Among Movable Obstacles (NAMO), Adaptive Costmap Planning, ROS 2 Navigation Stack, LiDAR-Based Perception, Disaster-Response Robotics">
   <!-- TODO: List all authors -->
   <meta name="author" content="Liviu-Mihai Stan, Ranulfo Bezerra, Shotaro Kojima, Tadesse Alemayoh Tsige, Satoshi Tadokoro, Masashi Konyo, Kazunori Ohno">
   <meta name="robots" content="index, follow">
@@ -21,7 +21,7 @@
   <!-- TODO: Replace with your institution or lab name -->
   <meta property="og:site_name" content="Tough Cyberphysical AI Research Center">
   <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="Adaptive Cost-Map-based Path Planning in Partially Unknown Environments with Movable Obstacles">
+  <meta property="og:title" content="Adaptive Costmap-based Path Planning in Partially Known Environments with Movable Obstacles">
   <!-- TODO: Same as description above -->
   <meta property="og:description" content="Reliable robot navigation in disaster-response and other cluttered indoor environments requires more than obstacle avoidance — robots must also recognize when obstacles can be safely pushed aside. This project presents an adaptive, LiDAR- and odometry-based path-planning framework built directly into the ROS 2 Nav2 stack. A new Movable Obstacles Layer flags LiDAR returns missing from the static map as potentially movable, while a Slow-Pose Progress Checker monitors commanded versus actual velocity to detect when the robot is slowed or stalled. Costs are then raised from light to heavy to lethal, prompting Nav2 to back out and re-plan automatically. Simulations on a Scout Mini show that the system enables successful navigation through cluttered environments with movable obstacles—situations where standard static-map planners would fail—while maintaining efficient travel times. Fully open-source and CPU-efficient, this ROS 2-native framework provides a lightweight, reproducible solution for navigating among movable obstacles in unstructured, real-world settings.">
   <!-- TODO: Replace with your actual website URL -->
@@ -52,7 +52,7 @@
   <!-- <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview"> -->
 
   <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="Adaptive Cost-Map-based Path Planning in Partially Unknown Environments with Movable Obstacles">
+  <meta name="citation_title" content="Adaptive Costmap-based Path Planning in Partially Known Environments with Movable Obstacles">
   <meta name="citation_author" content="Stan, Liviu-Mihai">
   <meta name="citation_author" content="Bezerra, Ranulfo">
   <meta name="citation_author" content="Kojima, Shotaro">
@@ -339,7 +339,7 @@
       </video>
       <!-- TODO: Replace with your video description -->
       <h2 class="subtitle has-text-centered">
-        In this demo, the robot uses the adaptive cost-map framework to navigate a simple corridor with a single movable obstacle. It evaluates both options—taking a longer detour or pushing the object aside—and autonomously chooses the shorter, pushable path to reach the goal. 
+        In this demo, the robot uses the adaptive costmap framework to navigate a simple corridor with a single movable obstacle. It evaluates both options—taking a longer detour or pushing the object aside—and autonomously chooses the shorter, pushable path to reach the goal. 
       </h2>
     </div>
   </div>
@@ -373,7 +373,7 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <div class="item">
-            <h2 class="subtitle has-text-centered">Cost-map</h2>
+            <h2 class="subtitle has-text-centered">Costmap</h2>
             <!-- Your image here -->
             <img src="static/images/costmap_layers.png" alt="Second research result visualization" loading="lazy"/>
             <p>
